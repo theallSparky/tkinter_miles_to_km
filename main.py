@@ -1,5 +1,6 @@
 import tkinter as tk
-from tkinter import ttk
+# from tkinter import ttk
+import ttkbootstrap as ttk
 
 def convert():
     mile_input = entry_int.get()
@@ -7,7 +8,7 @@ def convert():
     output_string.set(km_output)
 
 #window
-window = tk.Tk()
+window = ttk.Window(themename='journal')
 window.title('Miles to Kilometers')
 window.geometry('350x150')
 
